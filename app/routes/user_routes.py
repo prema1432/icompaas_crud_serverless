@@ -14,7 +14,7 @@ class UserResource(Resource):
         if user_id:
             user = db.session.get(IcompasUser, user_id)
             if not user:
-                return {'message': 'User not found'}, 404
+                return {"message": "User not found"}, 404
             serialized_users = user_schema.dump(user)
             return serialized_users
 
@@ -42,15 +42,15 @@ class UserResource(Resource):
         try:
             user = db.session.get(IcompasUser, user_id)
             if not user:
-                return {'message': 'User not found'}, 404
+                return {"message": "User not found"}, 404
             data = request.get_json()
             errors = user_schema.validate(data, partial=True)
             if errors:
                 return {"message": "Validation errors", "errors": errors}, 400
-            user.email = data.get('email', user.email)
-            user.first_name = data.get('first_name', user.first_name)
-            user.last_name = data.get('last_name', user.last_name)
-            user.password = data.get('password', user.password)
+            user.email = data.get("email", user.email)
+            user.first_name = data.get("first_name", user.first_name)
+            user.last_name = data.get("last_name", user.last_name)
+            user.password = data.get("password", user.password)
             db.session.commit()
             serialized_user = user_schema.dump(user)
             return serialized_user, 200
@@ -61,9 +61,9 @@ class UserResource(Resource):
         try:
             user = db.session.get(IcompasUser, user_id)
             if not user:
-                return {'message': 'User not found'}, 404
+                return {"message": "User not found"}, 404
             db.session.delete(user)
             db.session.commit()
-            return {'message': 'User deleted successfully'}, 204
+            return {"message": "User deleted successfully"}, 204
         except Exception as e:
             return {"message": "An error occurred", "error": str(e)}, 500
