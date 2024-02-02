@@ -1,5 +1,6 @@
 alembic==1.13.1
 aniso8601==9.0.1
+aws-wsgi==0.2.7
 blinker==1.7.0
 cfgv==3.4.0
 click==8.1.7

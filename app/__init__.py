@@ -1,3 +1,4 @@
+import awsgi
 from flask import Flask
 from flask_marshmallow import Marshmallow
 from flask_migrate import Migrate
@@ -17,3 +18,7 @@ api.add_resource(UserResource, "/users", "/users/<int:user_id>")
 
 with app.app_context():
     db.create_all()
+
+
+def lambda_handler(event, context):
+    return awsgi.response(app, event, context, base64_content_types={"image/png"})
