@@ -1,9 +1,9 @@
-name: Deploy to AWS Lambda Serverless
+name: Deploy to AWS Lambda
 
 on:
   push:
     branches:
-      - main
+      - main  # Change this to your main branch name
 
 jobs:
   deploy:
@@ -13,13 +13,21 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18.17.1
+
+      - name: Install Serverless Framework
+        run: npm install -g serverless
+
+      - name: Install Serverless WSGI Plugin
+        run: npm install serverless-wsgi
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.9
-
-      - name: Install Serverless
-        run: npm install -g serverless
+          python-version: 3.10
 
       - name: Install Serverless Python Requirements Plugin
         run: npm install serverless-python-requirements
