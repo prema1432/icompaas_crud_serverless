@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 from flask_marshmallow import Marshmallow
 from flask_migrate import Migrate
 from flask_restful import Api
@@ -14,6 +14,12 @@ api = Api(app)
 from app.routes.user_routes import UserResource
 
 api.add_resource(UserResource, "/users", "/users/<int:user_id>")
+
+
+@app.route("/")
+def home():
+    return jsonify(message="Welcome to the homepage!")
+
 
 with app.app_context():
     db.create_all()
