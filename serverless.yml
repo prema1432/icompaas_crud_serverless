@@ -1,4 +1,4 @@
-service: icompaas user curd
+service: icompaas
 provider:
  name: aws
  runtime: python3.10
