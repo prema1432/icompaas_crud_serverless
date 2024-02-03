@@ -1,0 +1,648 @@
+{
+	"info": {
+		"_postman_id": "6b7ce632-c4cc-4c90-af88-adcb67c54068",
+		"name": "Icompaas User CRUD collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10688946",
+		"_collection_link": "https://www.postman.com/premanathpythondeveloper/workspace/icompass-user-crud/collection/10688946-6b7ce632-c4cc-4c90-af88-adcb67c54068?action=share&source=collection_link&creator=10688946"
+	},
+	"item": [
+		{
+			"name": "ALL USERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{icomopass_env}}users",
+					"host": [
+						"{{icomopass_env}}users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All Users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{icomopass_env}}users",
+							"host": [
+								"{{icomopass_env}}users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "794"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 03 Feb 2024 11:15:19 GMT"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "7351c139-13a0-4545-bbcc-b19e3d2b8d34"
+						},
+						{
+							"key": "x-amzn-Remapped-Content-Length",
+							"value": "794"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "Sjn7LFUxBcwEBvA="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-65be2047-342f8a982012c4b02b65daf2;Parent=140714851aa47ff5;Sampled=0;lineage=4e82cc0e:0"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 ce3baca0b6c9126607602f8e13f57b20.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "BLR50-P1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "l6OH-e160hL9XLaMbYIHHX-OUrfmFZbO_5Yw8MovAORAkDVQ_PiVdA=="
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"email\": \"pmffffddr@gmail2.com\",\n        \"first_name\": \"premanaeeeth\",\n        \"last_name\": \"talamarla\",\n        \"password\": \"mylove\",\n        \"created_at\": \"2024-02-02T17:01:30.627310\",\n        \"updated_at\": null\n    },\n    {\n        \"id\": 2,\n        \"email\": \"premanath@prema.com\",\n        \"first_name\": \"Talamarla\",\n        \"last_name\": \"Premanath\",\n        \"password\": \"Welcome@1234\",\n        \"created_at\": \"2024-02-02T17:01:59.826729\",\n        \"updated_at\": null\n    },\n    {\n        \"id\": 3,\n        \"email\": \"premanath@prema.com\",\n        \"first_name\": \"Talamarla\",\n        \"last_name\": \"Premanath\",\n        \"password\": \"Welcome@1234\",\n        \"created_at\": \"2024-02-02T17:02:00.187667\",\n        \"updated_at\": null\n    },\n    {\n        \"id\": 4,\n        \"email\": \"updated_email@example.com\",\n        \"first_name\": \"UpdatedFirstName\",\n        \"last_name\": \"UpdatedLastName\",\n        \"password\": \"Welcome@1234\",\n        \"created_at\": \"2024-02-02T17:02:00.451557\",\n        \"updated_at\": \"2024-02-02T17:02:00.685398\"\n    }\n]"
+				},
+				{
+					"name": "ALL USERS-LATEST",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{icomopass_env}}users",
+							"host": [
+								"{{icomopass_env}}users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1001"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 03 Feb 2024 11:29:24 GMT"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "cda57715-b591-4555-855b-f012e296d7b0"
+						},
+						{
+							"key": "x-amzn-Remapped-Content-Length",
+							"value": "1001"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "Sjp-wF3EBcwEI7g="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-65be2391-65452900063580395a6b098a;Parent=07221a5ca390de45;Sampled=0;lineage=4e82cc0e:0"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 0fc2b1d86a5e348430ab09de3cd0fec2.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "BLR50-P1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "Uoui3oJZPhayQsrfTVTR47pWBoS5gCOf29SKRGSIZOZjpzOge3fMJQ=="
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 7,\n        \"email\": \"aswdeploy check\",\n        \"first_name\": \"premaaws\",\n        \"last_name\": \"talamarla\",\n        \"password\": \"more secured\",\n        \"created_at\": \"2024-02-03T11:19:24.247555\",\n        \"updated_at\": \"2024-02-03T11:22:21.494290\"\n    },\n    {\n        \"id\": 4,\n        \"email\": \"updated_email@example.com\",\n        \"first_name\": \"UpdatedFirstName\",\n        \"last_name\": \"UpdatedLastName\",\n        \"password\": \"Welcome@1234\",\n        \"created_at\": \"2024-02-02T17:02:00.451557\",\n        \"updated_at\": \"2024-02-02T17:02:00.685398\"\n    },\n    {\n        \"id\": 3,\n        \"email\": \"premanath@prema.com\",\n        \"first_name\": \"Talamarla\",\n        \"last_name\": \"Premanath\",\n        \"password\": \"Welcome@1234\",\n        \"created_at\": \"2024-02-02T17:02:00.187667\",\n        \"updated_at\": null\n    },\n    {\n        \"id\": 2,\n        \"email\": \"premanath@prema.com\",\n        \"first_name\": \"Talamarla\",\n        \"last_name\": \"Premanath\",\n        \"password\": \"Welcome@1234\",\n        \"created_at\": \"2024-02-02T17:01:59.826729\",\n        \"updated_at\": null\n    },\n    {\n        \"id\": 1,\n        \"email\": \"pmffffddr@gmail2.com\",\n        \"first_name\": \"premanaeeeth\",\n        \"last_name\": \"talamarla\",\n        \"password\": \"mylove\",\n        \"created_at\": \"2024-02-02T17:01:30.627310\",\n        \"updated_at\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "SINGLE USER",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Single User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{icomopass_env}}users/7",
+							"host": [
+								"{{icomopass_env}}users"
+							],
+							"path": [
+								"7"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "186"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 03 Feb 2024 11:20:56 GMT"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "3bffee40-1a59-40a2-8275-2582711f907d"
+						},
+						{
+							"key": "x-amzn-Remapped-Content-Length",
+							"value": "186"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "Sjov2E5uhcwEKgA="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-65be2198-780dcb5e38396588307817f4;Parent=01184068c465bf03;Sampled=0;lineage=4e82cc0e:0"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 ce3baca0b6c9126607602f8e13f57b20.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "BLR50-P1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "45G6Qb1Ov-rsKD-78aZUzczMv4y2uIqpnoHSJigXyM41Mh5i7spYkw=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 7,\n    \"email\": \"aswdeploy check\",\n    \"first_name\": \"premaaws\",\n    \"last_name\": \"talamarla\",\n    \"password\": \"secreat password\",\n    \"created_at\": \"2024-02-03T11:19:24.247555\",\n    \"updated_at\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "CREATE USER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\": \"12345678\",\n    \"email\": \"mouseb@yopmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local_env}}api/auth/login/",
+					"host": [
+						"{{local_env}}api"
+					],
+					"path": [
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"aswdeploy check\",\n    \"first_name\":\"premaaws\",\n    \"last_name\":\"talamarla\",\n    \"password\":\"secreat password\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{icomopass_env}}users",
+							"host": [
+								"{{icomopass_env}}users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "186"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 03 Feb 2024 11:19:24 GMT"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "52a51b00-a539-4205-8f3c-fcb1cf63976f"
+						},
+						{
+							"key": "x-amzn-Remapped-Content-Length",
+							"value": "186"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "SjohdHfABcwEWcw="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-65be213c-5ce7ff261eb6800b6756d088;Parent=3d1fc2ef70cb68c5;Sampled=0;lineage=4e82cc0e:0"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 ce3baca0b6c9126607602f8e13f57b20.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "BLR50-P1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "CYe4RqbqqxTMLk_uUerlVccfqt0Wq_3lsN2l1zXjtJNvejfAlG3Gsw=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 7,\n    \"email\": \"aswdeploy check\",\n    \"first_name\": \"premaaws\",\n    \"last_name\": \"talamarla\",\n    \"password\": \"secreat password\",\n    \"created_at\": \"2024-02-03T11:19:24.247555\",\n    \"updated_at\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "UPDATE USER",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\":\"more secured\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{icomopass_env}}users/7",
+					"host": [
+						"{{icomopass_env}}users"
+					],
+					"path": [
+						"7"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update User",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"password\":\"more secured\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{icomopass_env}}users/7",
+							"host": [
+								"{{icomopass_env}}users"
+							],
+							"path": [
+								"7"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "206"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 03 Feb 2024 11:22:21 GMT"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "2f8ae4c7-1250-415b-8159-a7ea614e709b"
+						},
+						{
+							"key": "x-amzn-Remapped-Content-Length",
+							"value": "206"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "Sjo9JHvSBcwEaZg="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-65be21ed-57ab0be26a75a79920109a24;Parent=53c03ec6a3c211e8;Sampled=0;lineage=4e82cc0e:0"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 ce3baca0b6c9126607602f8e13f57b20.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "BLR50-P1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "BU3yCv4fy65dO4xx5OrxB9cYqGOK6OchrlpTjo2sUK_Ajv-Jiz854Q=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 7,\n    \"email\": \"aswdeploy check\",\n    \"first_name\": \"premaaws\",\n    \"last_name\": \"talamarla\",\n    \"password\": \"more secured\",\n    \"created_at\": \"2024-02-03T11:19:24.247555\",\n    \"updated_at\": \"2024-02-03T11:22:21.494290\"\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE USER",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{icomopass_env}}users/6",
+					"host": [
+						"{{icomopass_env}}users"
+					],
+					"path": [
+						"6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete User",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{icomopass_env}}users/6",
+							"host": [
+								"{{icomopass_env}}users"
+							],
+							"path": [
+								"6"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 03 Feb 2024 11:23:23 GMT"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "60915e50-081b-4035-87d1-4e7696960328"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "SjpG3HqYBcwEVFA="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-65be222b-77f3facb64882c605435e752;Parent=29b9c7d7def7799d;Sampled=0;lineage=4e82cc0e:0"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 ce3baca0b6c9126607602f8e13f57b20.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "BLR50-P1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "MiIOdvyAQpmKhyylIdmJOODpLctgejoLscrMw2HWK0oVyzOPqi67Ww=="
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Invalid User",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{icomopass_env}}users/6",
+							"host": [
+								"{{icomopass_env}}users"
+							],
+							"path": [
+								"6"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 03 Feb 2024 11:23:43 GMT"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "3f852a00-0c93-4fed-9f66-2a403480ca56"
+						},
+						{
+							"key": "x-amzn-Remapped-Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "SjpJ4HDTBcwEFPw="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-65be223e-55cc82341bb972ff6b4ca3ce;Parent=0563760121454946;Sampled=0;lineage=4e82cc0e:0"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Error from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 ce3baca0b6c9126607602f8e13f57b20.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "BLR50-P1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "tizjTrSlsVUjssS1z07RWQsdFIt9R54ug-pDvFx-hbGcf_f8aHAcag=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User not found\"\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkzMjg5NjUwLCJpYXQiOjE2OTMyODkzNTAsImp0aSI6Ijc0MjM0Y2JiMzY2ZjRlMTdiNDM3MWE5MjM1MzNkZTM3IiwidXNlcl9pZCI6MX0.em7Fp3rGDhe0wq4PFJ86YkUhnbxes7Ulir0-tYX3BAw",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "icomopass_env",
+			"value": "https://1oelqml0tf.execute-api.ap-south-1.amazonaws.com/dev/",
+			"type": "string"
+		}
+	]
+}
