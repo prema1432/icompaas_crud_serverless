@@ -4,6 +4,7 @@ from flask_restful import Resource
 from app import db
 from app.models.user_models import IcompasUser
 from app.schemas.user_schema import IcompasUserSchema
+from sqlalchemy import desc
 
 user_schema = IcompasUserSchema()
 users_schema = IcompasUserSchema(many=True)
@@ -19,7 +20,8 @@ class UserResource(Resource):
             return serialized_users
 
         else:
-            users = IcompasUser.query.all()
+            # users = IcompasUser.query.all()
+            users = IcompasUser.query.order_by(desc(IcompasUser.created_at)).all()
             serialized_users = users_schema.dump(users)
             return serialized_users
 
