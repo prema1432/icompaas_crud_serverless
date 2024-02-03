@@ -67,3 +67,6 @@ migrations/
 *.pyd
 __pycache__/
 .env
+
+
+.serverless
