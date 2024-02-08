@@ -1,4 +1,4 @@
-service: icompaas
+service: icompaas2
 provider:
  name: aws
  runtime: python3.10
