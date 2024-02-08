@@ -53,7 +53,7 @@ The project includes the following key components:
 
 - **AWS Deployment Endpoint**
 
-  Development : https://1oelqml0tf.execute-api.ap-south-1.amazonaws.com/dev/users
+  Development : https://i6j544m2mg.execute-api.ap-south-1.amazonaws.com/dev
 
 
 - **Postman Collection**
